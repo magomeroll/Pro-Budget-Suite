@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Budget Suite - Gestione Finanziaria Professionale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #059669 0%, #ea580c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .emerald-gradient {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        .orange-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-[#F8F9FA] text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 emerald-gradient rounded-xl flex items-center justify-center shadow-lg shadow-emerald-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-900">ProBudget <span class="text-emerald-600">Suite</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#features" class="hover:text-emerald-600 transition-colors">Caratteristiche</a>
+                <a href="#privacy" class="hover:text-emerald-600 transition-colors">Privacy</a>
+                <a href="#pricing" class="hover:text-emerald-600 transition-colors">Prezzi</a>
+                <a href="#" class="px-6 py-2.5 emerald-gradient text-white rounded-full shadow-lg shadow-emerald-200 hover:scale-105 transition-transform">Scarica Ora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-100 rounded-full text-emerald-700 text-xs font-bold uppercase tracking-widest mb-8 animate-bounce">
+                🚀 Nuova Versione 1.0 Disponibile
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8 tracking-tight">
+                Gestisci le tue finanze con <span class="gradient-text">Precisione Chirurgica.</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+                L'unica suite desktop per Windows e Mac che separa perfettamente la tua vita <span class="text-emerald-600 font-bold">Personale</span> dal tuo <span class="text-orange-600 font-bold">Business</span>. Tutto in un unico posto, offline e al sicuro.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#" class="w-full sm:w-auto px-10 py-5 emerald-gradient text-white text-lg font-bold rounded-2xl shadow-2xl shadow-emerald-200 hover:scale-105 transition-all flex items-center justify-center gap-3">
+                    Inizia Gratis
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#features" class="w-full sm:w-auto px-10 py-5 bg-white text-slate-900 text-lg font-bold rounded-2xl border border-slate-200 hover:bg-slate-50 transition-all">
+                    Scopri di più
+                </a>
+            </div>
+            
+            <!-- App Preview Placeholder -->
+            <div class="mt-20 relative">
+                <div class="absolute inset-0 bg-emerald-400 blur-[120px] opacity-20 -z-10"></div>
+                <div class="bg-white p-2 rounded-[2.5rem] shadow-2xl border border-slate-200 overflow-hidden">
+                    <img src="https://picsum.photos/seed/dashboard/1600/900" alt="Dashboard Preview" class="rounded-[2rem] w-full shadow-inner" referrerPolicy="no-referrer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Perché scegliere Pro Budget Suite?</h2>
+                <p class="text-slate-500 text-lg">Strumenti professionali pensati per chi vuole chiarezza sui propri numeri.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-3xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-50 transition-all group">
+                    <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-6 group-hover:emerald-gradient group-hover:text-white transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Doppio Workspace</h3>
+                    <p class="text-slate-500 leading-relaxed">Gestisci le spese di casa e le fatture aziendali separatamente con un solo click. Categorie e budget dedicati per ogni esigenza.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-3xl border border-slate-100 hover:border-orange-200 hover:shadow-xl hover:shadow-orange-50 transition-all group">
+                    <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 mb-6 group-hover:orange-gradient group-hover:text-white transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 10-4 4-4-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Controllo IVA e Tasse</h3>
+                    <p class="text-slate-500 leading-relaxed">Calcolo automatico dell'IVA per ogni transazione business. Non farti mai più sorprendere dalle scadenze fiscali.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-3xl border border-slate-100 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-50 transition-all group">
+                    <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-6 group-hover:emerald-gradient group-hover:text-white transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/><path d="M2 12h20"/><path d="m5 7-3 5 3 5"/><path d="m19 7 3 5-3 5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Obiettivi di Risparmio</h3>
+                    <p class="text-slate-500 leading-relaxed">Visualizza i tuoi sogni. Imposta traguardi per vacanze, auto o investimenti e guarda la barra progredire ogni mese.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-emerald-500/10 blur-[120px] -z-0"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="w-16 h-16 bg-emerald-500/20 rounded-2xl flex items-center justify-center text-emerald-400 mb-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                    </div>
+                    <h2 class="text-4xl font-extrabold mb-6 leading-tight">I tuoi dati sono tuoi.<br><span class="text-emerald-400">Punto.</span></h2>
+                    <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                        A differenza delle app cloud, Pro Budget Suite salva tutto in un database locale criptato sul tuo computer. Nessun server esterno, nessun tracciamento, nessuna vendita di dati.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Database SQLite Locale
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Funzionamento 100% Offline
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Esportazione CSV/Excel istantanea
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="bg-slate-800 p-8 rounded-[2rem] border border-slate-700 shadow-2xl">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                        </div>
+                        <div class="space-y-4 font-mono text-sm text-emerald-400/80">
+                            <p>> Initializing local database...</p>
+                            <p>> Encryption: AES-256 active</p>
+                            <p>> Connection: Localhost only</p>
+                            <p>> Cloud Sync: DISABLED (Privacy First)</p>
+                            <p class="text-white">> Ready to manage your wealth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / CTA -->
+    <section id="pricing" class="py-24 bg-[#F8F9FA]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Pronto a cambiare marcia?</h2>
+            <p class="text-slate-500 text-lg mb-12">Scarica la suite completa e inizia a gestire i tuoi soldi come un professionista.</p>
+            
+            <div class="bg-white p-12 rounded-[3rem] shadow-2xl border border-slate-200 relative overflow-hidden">
+                <div class="absolute top-0 right-0 px-8 py-2 emerald-gradient text-white text-xs font-bold uppercase tracking-widest transform rotate-45 translate-x-10 translate-y-6">
+                    Best Seller
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Licenza Lifetime</h3>
+                <div class="text-6xl font-black text-slate-900 mb-6">€49<span class="text-xl text-slate-400 font-medium">.00</span></div>
+                <p class="text-slate-500 mb-10 max-w-md mx-auto">Un solo pagamento, accesso per sempre. Tutti gli aggiornamenti futuri inclusi. Nessun abbonamento mensile.</p>
+                
+                <ul class="grid sm:grid-cols-2 gap-4 text-left mb-12 max-w-2xl mx-auto">
+                    <li class="flex items-center gap-3 text-slate-700 font-medium">
+                        <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        Workspace Illimitati
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-700 font-medium">
+                        <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        Export PDF & Excel
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-700 font-medium">
+                        <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        Supporto Prioritario
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-700 font-medium">
+                        <div class="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        Aggiornamenti Gratis
+                    </li>
+                </ul>
+
+                <a href="#" class="block w-full py-6 emerald-gradient text-white text-xl font-bold rounded-2xl shadow-xl shadow-emerald-200 hover:scale-[1.02] transition-all">
+                    Acquista Ora e Scarica
+                </a>
+                <p class="mt-6 text-slate-400 text-sm flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Pagamento sicuro via Stripe / PayPal
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 emerald-gradient rounded-lg flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+                </div>
+                <span class="font-bold text-slate-900">ProBudget Suite</span>
+            </div>
+            <div class="text-slate-400 text-sm">
+                &copy; 2024 Pro Budget Suite. Tutti i diritti riservati. <br class="md:hidden"> Sviluppato con ❤️ per la tua libertà finanziaria.
+            </div>
+            <div class="flex gap-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-emerald-600 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-emerald-600 transition-colors">Termini e Condizioni</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
